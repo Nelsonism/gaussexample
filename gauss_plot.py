@@ -51,11 +51,14 @@ ax.set_xticklabels(xtick_labels, rotation=90)
 ax.set_yticks([])
 
 ax.set_xlim(-4, 4)
-ax.set_ylim(-0.1, 1.1)
+ax.set_ylim(-0.1, 2)
 
-ax.text(0, 0.4, '68%', fontsize=12, color='w', va='center', ha='center')
+ax.text(0, 0.4, '68%', fontsize=14, color='w', va='center', ha='center')
+plt.plot(x_sigma1, color='k', label = "Nelson Soto")
+plt.plot(x_sigma3, color='k', label = "nelson_bkn_1993@hotmail.com")
+plt.legend()
 
-fig.subplots_adjust(bottom=0.30)
+fig.subplots_adjust(bottom=0.35)
 
 # ax.tick_params(axis='x', which='major', labelsize=10, top='off')
 plt.savefig('gauss.png')
